@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elsweefi</title>
+
+  <!-- ربط ملف manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- أيقونة للتطبيق -->
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <!-- ألوان للآيفون -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Elsweefi">
+</head>
+<body>
+  <h1>مرحبًا بك في Elsweefi!</h1>
+  <p>ده مثال بسيط لـ PWA.</p>
+
+  <script>
+    // تسجيل Service Worker
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</body>
+</html>
